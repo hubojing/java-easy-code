@@ -1,0 +1,56 @@
+继承 多态 小练习
+
+APerson.java
+
+package com.imooc;
+
+public abstract class APerson {
+	public abstract void say();
+}
+
+
+
+American.java
+
+package com.imooc;
+
+public class American extends APerson{
+	public void say(){
+		System.out.println("美国人说英语");
+	}
+}
+
+Chinese.java
+package com.imooc;
+
+public class Chinese extends APerson {
+	public void say(){
+		System.out.println("中国人说中国话");
+	}
+}
+
+
+
+Test.java
+
+package com.imooc;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		APerson p = new Chinese();
+		APerson p2= new American();
+		p.say();
+		p2.say();
+	}
+
+}
+
+
+
+中国人说中国话
+美国人说英语
+
+
+
