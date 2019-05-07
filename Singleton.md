@@ -1,5 +1,5 @@
-饿汉式单例模式
-无论如何都会创建一个实例
+# 饿汉式单例模式
+无论如何都会创建一个实例。
 GiantDragon.java
 ```java
 package charactor;
@@ -49,8 +49,8 @@ GiantDragon 应该只有一只，通过私有化其构造方法，使得外部�
 GiantDragon 提供了一个public static的getInstance方法，外部调用者通过该方法获取对象，而且每一次都是获取同一个对象。从而达到单例的目的。
 
 
-懒汉式单例模式
-懒汉式单例模式与饿汉式单例模式不同，只有在调用getInstance的时候，才会创建实例
+# 懒汉式单例模式
+懒汉式单例模式与饿汉式单例模式不同，只有在调用getInstance的时候，才会创建实例。
 GiantDragon.java
 ```java
 package charactor;
